@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../data/xslt/dico.xsl"?>
+<dictionnaire   
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux ../xsd/dico.xsd'>
+    <mots>
+        <mot niveau="1">main</mot>
+        <mot niveau="1">maman</mot>
+        <mot niveau="1">papa</mot>
+        <mot niveau="1">pain</mot>
+        <mot niveau="2">doigt</mot>
+        <mot niveau="2">tigre</mot>
+        <mot niveau="2">gagner</mot>
+        <mot niveau="2">oncle</mot>
+        <mot niveau="3">tableau</mot>
+        <mot niveau="3">échalotte</mot>
+        <mot niveau="3">brise</mot>
+        <mot niveau="3">calcium</mot>
+        <mot niveau="4">inhibes</mot>
+        <mot niveau="4">inhumer</mot>
+        <mot niveau="4">insérer</mot>
+        <mot niveau="4">jouxter</mot>
+        <mot niveau="5">parallele</mot>
+        <mot niveau="5">parallelogramme</mot>
+        <mot niveau="5">parallelisme</mot>
+        <mot niveau="5">trapeze</mot>
+    </mots>
+</dictionnaire>

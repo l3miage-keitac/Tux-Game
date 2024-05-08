@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tux:profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://myGame/tux ../xsd/profil.xsd" xmlns:tux="http://myGame/tux">
+    <tux:nom>test</tux:nom>
+    <tux:avatar>conan.png</tux:avatar>
+    <tux:anniversaire>1999-02-12</tux:anniversaire>
+    <tux:parties>
+        <tux:partie date="2023-12-01">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="3">tableau</tux:mot>
+        </tux:partie>
+    </tux:parties>
+</tux:profil>

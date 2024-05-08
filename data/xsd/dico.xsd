@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<!-- Définition du schéma XML avec un espace de noms et des éléments qualifiés -->
+<xs:schema version="1.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:tux="http://myGame/tux"
+        targetNamespace="http://myGame/tux"
+        elementFormDefault="qualified">
+
+    <!-- Définition de l'élément 'dictionnaire' avec le type 'Dictionnaire' -->
+    <xs:element name="dictionnaire" type="tux:Dictionnaire"/>
+
+    <!-- Définition du type 'Dictionnaire' avec la séquence contenant l'élément 'mots' -->
+    <xs:complexType name="Dictionnaire">
+        <xs:sequence>
+            <xs:element name="mots" type="tux:ListeDeMots"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Définition du type 'ListeDeMots' avec la séquence contenant l'élément 'mot' -->
+    <xs:complexType name="ListeDeMots">
+        <xs:sequence>
+            <xs:element name="mot" type="tux:MotComplexe" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Définition du type 'MotComplexe' avec un contenu simple étendant 'MotSimple' et un attribut 'niveau' -->
+    <xs:complexType name="MotComplexe">
+        <xs:simpleContent>
+            <xs:extension base="tux:MotSimple">
+                <xs:attribute name="niveau"  type="tux:Niveau"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Définition du type 'MotSimple' comme restriction de chaîne avec un motif et une longueur minimale -->
+    <xs:simpleType name="MotSimple">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Zéàèùç\-])+"/>
+            <xs:minLength value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Définition du type 'Niveau' comme restriction d'entier avec un minimum et un maximum inclusifs -->
+    <xs:simpleType name="Niveau">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

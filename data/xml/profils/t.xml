@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tux:profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://myGame/tux ../xsd/profil.xsd" xmlns:tux="http://myGame/tux">
+    <tux:nom>t</tux:nom>
+    <tux:avatar>conan.png</tux:avatar>
+    <tux:anniversaire>2021-02-14</tux:anniversaire>
+    <tux:parties>
+        <tux:partie date="01/12/2023" trouvé="50%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="2">cosdfsrbas</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="100%">
+            <tux:temps>14</tux:temps>
+            <tux:mot niveau="4">testinhgjg</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="50%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="2">cosdfsrbas</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="30%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="4">testikjhng</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="100%">
+            <tux:temps>14</tux:temps>
+            <tux:mot niveau="4">testinhgjg</tux:mot>
+        </tux:partie>
+    </tux:parties>
+</tux:profil>

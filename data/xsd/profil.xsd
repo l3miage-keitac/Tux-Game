@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<!-- Définition du schéma XML pour le profil avec un espace de noms et des éléments qualifiés -->
+<xs:schema version="1.0"
+        targetNamespace="http://myGame/tux"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:tux="http://myGame/tux"
+        elementFormDefault="qualified">
+
+    <!-- Inclusion du schéma externe pour le dictionnaire -->
+    <xs:include schemaLocation="../xsd/dico.xsd"/>
+
+    <!-- Définition de l'élément 'profil' avec le type 'Profil' -->
+    <xs:element name="profil" type="tux:Profil"/>
+
+    <!-- Définition du type 'Profil' avec la séquence contenant les éléments 'nom', 'avatar', 'anniversaire', et 'parties' -->
+    <xs:complexType name="Profil">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="avatar" type="xs:string"/>
+            <xs:element name="anniversaire" type="xs:date"/>
+            <xs:element name="parties" type="tux:ListeDeParties"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Définition du type 'ListeDeParties' avec la séquence contenant l'élément 'partie' -->
+    <xs:complexType name="ListeDeParties">
+        <xs:sequence>
+            <xs:element name="partie" type="tux:JeuxPartie" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Définition du type 'JeuxPartie' avec la séquence contenant les éléments 'temps' et 'mot', et les attributs 'date' et 'trouvé' -->
+    <xs:complexType name="JeuxPartie">
+        <xs:sequence>
+            <xs:element name="temps" type="tux:TempsDePartie" minOccurs="0"/>
+            <xs:element name="mot" type="tux:MotComplexe"/>
+        </xs:sequence>
+        <xs:attribute name="date" type="xs:date" />
+        <xs:attribute name="trouvé" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+    <!-- Définition du type 'TempsDePartie' comme restriction d'entier avec une valeur minimale de 0 -->
+    <xs:simpleType name="TempsDePartie">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value='0'/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

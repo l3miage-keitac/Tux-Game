@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tux:profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://myGame/tux ../xsd/profil.xsd" xmlns:tux="http://myGame/tux">
+    <tux:nom>h</tux:nom>
+    <tux:avatar>conan.png</tux:avatar>
+    <tux:anniversaire/>
+    <tux:parties>
+        <tux:partie date="01/12/2023" trouvé="100%">
+            <tux:temps>12</tux:temps>
+            <tux:mot niveau="1">ola</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="25%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="5">salut</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="8%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="5">ouverhalfdgl</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="25%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="5">ouverhalfdgl</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="8%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="5">ouverhalfdgl</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="100%">
+            <tux:temps>14</tux:temps>
+            <tux:mot niveau="3">terre</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="25%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="5">ouverhalfdgl</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="100%">
+            <tux:temps>10</tux:temps>
+            <tux:mot niveau="1">ola</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="100%">
+            <tux:temps>12</tux:temps>
+            <tux:mot niveau="1">ola</tux:mot>
+        </tux:partie>
+        <tux:partie date="01/12/2023" trouvé="25%">
+            <tux:temps>15</tux:temps>
+            <tux:mot niveau="5">ouverhalfdgl</tux:mot>
+        </tux:partie>
+    </tux:parties>
+</tux:profil>
